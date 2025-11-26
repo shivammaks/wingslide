@@ -1,1 +1,98 @@
 
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class EmployeeData {
+int eid;
+String name;
+float salary;
+
+	public EmployeeData() {
+	super();
+	}
+
+	public void inputEmployee() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println(Enter Employee Details);
+		System.out.println(enter id);
+		eid=sc.nextInt();
+		System.out.println(eneter name);
+		name=sc.next();
+		System.out.println(enter salary);
+		salary=sc.nextFloat();
+	}
+	class SortEmpSalary implements ComparatorEmployeeData{
+
+		public int compare1(EmployeeData e1, EmployeeData e2) {
+			if(e1.salary==e2.salary)
+			     return 0;
+			else if(e1.salarye2.salary)
+				return -1;
+			else 
+				return 1;
+						
+		}
+
+		@Override
+		public int compare(EmployeeData o1, EmployeeData o2) {
+			 TODO Auto-generated method stub
+			return 0;
+		}
+		
+	}
+	
+
+	@Override
+	public String toString() {
+		return EmployeeData [eid= + eid + , name= + name + , salary= + salary + ];
+	}
+
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		EmployeeData ob1=new EmployeeData();
+		EmployeeData ob2=new EmployeeData();
+		EmployeeData ob3=new EmployeeData();
+		
+		ob1.inputEmployee();
+		ob2.inputEmployee();
+		ob3.inputEmployee();
+		
+		  array
+		LinkedListEmployeeDatali=new LinkedListEmployeeData();
+		li.add(ob1);
+		li.add(ob2);
+		li.add(ob3);
+		
+		iterator
+		IteratorEmployeeData it=li.iterator();
+		System.out.println(_____________________________________________________);
+		System.out.println(Id  Name  Salary);
+		while(it.hasNext()) {
+			EmployeeData empobj=it.next();
+			System.out.println(empobj.eid+t
+					+ +empobj.name+t+t+empobj.salary);
+		}
+		Sort Employee data
+				SortEmpSalary esort=new  SortEmpSalary();
+				Collections.sort(li,esort);
+				System.out.println(After Sorting Employee Based on Salary);
+				Display Employee
+						IteratorEmployeeData eit1=li.iterator();
+						
+						System.out.println(Employee Details);
+						System.out.println(___________________________________________________);
+						System.out.println(IDtNametAgetSalary);
+						while(eit1.hasNext()) {
+							EmployeeData empobj1=eit1.next();
+							System.out.println(empobj1.eid+t+empobj1.name+t+empobj1.salary);
+						}
+	}
+
+}
