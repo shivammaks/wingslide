@@ -5,4 +5,6 @@ display():void{
 }
 }
 let object=new Employee("shivamma",1);
-object.display();
+
+object.display(); 
+iam adding something to see changes in my file
