@@ -13,9 +13,7 @@ int eid;
 String name;
 float salary;
 
-	public EmployeeData() {
-	super();
-	}
+	
 
 	public void inputEmployee() {
 		Scanner sc=new Scanner(System.in);
